@@ -18,30 +18,30 @@ public class AboutUs extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
     }
 
-    public void ClickMenu(View view){
-        HomeActivity.openDrawer(drawerLayout);
-    }
-
-    public void ClickLogo(View view){
-        HomeActivity.closeDrawer(drawerLayout);
-    }
-
-    public void ClickHome(View view){
-        HomeActivity.redirectActivity(this, HomeActivity.class);
-    }
-
-    public void ClickAboutUs(View view){
-        recreate();
-    }
-
-    public void ClickLogout(View view){
-        HomeActivity.logout(this);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        HomeActivity.closeDrawer(drawerLayout);
-    }
+//    public void ClickMenu(View view){
+//        HomeActivity.openDrawer(drawerLayout);
+//    }
+//
+//    public void ClickLogo(View view){
+//        HomeActivity.closeDrawer(drawerLayout);
+//    }
+//
+//    public void ClickHome(View view){
+//        HomeActivity.redirectActivity(this, HomeActivity.class);
+//    }
+//
+//    public void ClickAboutUs(View view){
+//        recreate();
+//    }
+//
+//    public void ClickLogout(View view){
+//        HomeActivity.logout(this);
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//
+//        HomeActivity.closeDrawer(drawerLayout);
+//    }
 }

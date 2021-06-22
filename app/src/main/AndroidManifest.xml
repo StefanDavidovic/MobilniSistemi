@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobilniSistemi">
-        <activity android:name=".SingleProduct"></activity>
+        <activity android:name=".UpdateActivity"
+            android:parentActivityName=".HomeActivity2"/>
+        <activity android:name=".AddActivity"
+            android:label="Add Article"
+            android:parentActivityName=".HomeActivity2"/>
+        <activity android:name=".HomeActivity2"
+            android:label="Book Library"/>
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".SingleProduct" />
         <activity android:name=".AboutUs" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
@@ -17,6 +25,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

@@ -35,36 +35,40 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-    public void ClickMenu(View view){
-
-        openDrawer(drawerLayout);
-    }
-
-    public static void openDrawer(DrawerLayout drawerLayout){
-        drawerLayout.openDrawer(GravityCompat.START);
-    }
-
-    public void ClickLogo(View view){
-        closeDrawer(drawerLayout);
-    }
-
-    public static void closeDrawer(DrawerLayout drawerLayout){
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
-            drawerLayout.closeDrawer(GravityCompat.START);
-        }
-    }
-
-    public void ClickHome(View view){
-        recreate();
-    }
-
-    public void ClickAboutUs(View view){
-        redirectActivity(this, AboutUs.class);
-    }
-
-    public void ClickLogout(View view){
-        logout(this);
-    }
+//    public void ClickMenu(View view){
+//
+//        openDrawer(drawerLayout);
+//    }
+//
+//    public void ClickShopping(View view){
+//        redirectActivity(this, ShoppingCart.class);
+//    }
+//
+//    public static void openDrawer(DrawerLayout drawerLayout){
+//        drawerLayout.openDrawer(GravityCompat.START);
+//    }
+//
+//    public void ClickLogo(View view){
+//        closeDrawer(drawerLayout);
+//    }
+//
+//    public static void closeDrawer(DrawerLayout drawerLayout){
+//        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+//            drawerLayout.closeDrawer(GravityCompat.START);
+//        }
+//    }
+//
+//    public void ClickHome(View view){
+//        recreate();
+//    }
+//
+//    public void ClickAboutUs(View view){
+//        redirectActivity(this, AboutUs.class);
+//    }
+//
+//    public void ClickLogout(View view){
+//        logout(this);
+//    }
 
     public static void logout(Activity activity){
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
@@ -100,9 +104,9 @@ public class HomeActivity extends AppCompatActivity {
         activity.startActivity(intent);
     }
 
-    @Override
-    protected void onPause(){
-        super.onPause();
-        closeDrawer(drawerLayout);
-    }
+//    @Override
+//    protected void onPause(){
+//        super.onPause();
+//        closeDrawer(drawerLayout);
+//    }
 }
